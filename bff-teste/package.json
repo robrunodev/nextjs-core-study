@@ -1,0 +1,16 @@
+{
+  "name": "bff-teste",
+  "version": "1.0.0",
+  "description": "BFF (Backend for Frontend) com Node.js e Express para estudo",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "node-fetch": "^3.3.2"
+  }
+}

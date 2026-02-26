@@ -1,0 +1,107 @@
+#root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+.app header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.app header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.75rem;
+}
+
+.app header p {
+  margin: 0;
+  color: #888;
+  font-size: 0.95rem;
+}
+
+.app section {
+  margin-bottom: 2rem;
+}
+
+.app section h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+}
+
+.app .list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.app .list li {
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  background: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.app .list li strong {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.app .list li p {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.app .list .meta {
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.app .list.users li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.app .list.users .meta {
+  display: inline;
+}
+
+.app .error {
+  color: #e57373;
+}
+
+.app pre {
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow: auto;
+  font-size: 0.85rem;
+}
+
+.app .toggle-mobile {
+  margin-top: 1rem;
+}
+
+.app .toggle-mobile label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.app .dashboard-section button {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.app .dashboard-response {
+  max-height: 220px;
+}
