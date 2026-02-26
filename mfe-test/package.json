@@ -1,0 +1,16 @@
+{
+  "name": "mfe-test",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Projeto de estudo - Micro Frontends (MFE) com Module Federation",
+  "scripts": {
+    "install:all": "npm install && cd host && npm install && cd ../remote-header && npm install && cd ../remote-dashboard && npm install",
+    "build:remotes": "cd remote-header && npm run build && cd ../remote-dashboard && npm run build",
+    "preview:remotes": "concurrently \"cd remote-header && npm run preview\" \"cd remote-dashboard && npm run preview\"",
+    "dev:host": "cd host && npm run dev",
+    "dev": "npm run build:remotes && concurrently \"npm run preview:remotes\" \"npm run dev:host\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
