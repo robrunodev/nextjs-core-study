@@ -1,3 +1,4 @@
+import { Layout } from "@/src/components/layout";
 import type { AppProps } from "next/app";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../app/globals.css";
@@ -15,8 +16,9 @@ const geistMono = Geist_Mono({
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </div>
   );
 }
-
