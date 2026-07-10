@@ -9,9 +9,7 @@ export const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="relative flex min-h-screen flex-col dark bg-gray-950">
       <Header />
-      <main className="flex-1 flex-col mb-12 mx-auto max-w-7xl">
-        {children}
-      </main>
+      <main className="flex-1 flex-col mb-12">{children}</main>
       <Footer />
     </div>
   );

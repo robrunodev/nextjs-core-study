@@ -5,8 +5,8 @@ import { HeroSectionIconText } from "./components/heroSectionIconText";
 
 export const HeroSection: React.FC = () => {
   return (
-    <section className="container relative flex items-center justify-center mt-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 min-h-[20rem] md:h-[36rem] items-center">
+    <section className="relative flex items-center justify-center mt-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 min-h-[20rem] md:h-[36rem] items-center container mx-auto max-w-7xl px-4">
         <div className="flex flex-col items-center justify-center gap-4 md:items-start lg:items-start">
           <h1 className="sm:text-5xl font-bold text-gray-100">
             Venda seus produtos como afiliado em um único lugar
