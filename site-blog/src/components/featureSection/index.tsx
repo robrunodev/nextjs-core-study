@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const FeatureCard = ({
   tagText,
@@ -42,9 +43,11 @@ export const FeatureSection = () => {
                 Tenha uma loja online personalizada com a cara da sua marca
               </h1>
             </div>
-            <Button className="rounded-full bg-blue-300 w-fit">
-              Criar loja grátis
-              <ArrowRight />
+            <Button variant={"primary"} asChild>
+              <Link href="/criar-loja" className="w-fit">
+                Criar loja grátis
+                <ArrowRight />
+              </Link>
             </Button>
           </div>
           <div className="mx-auto">
